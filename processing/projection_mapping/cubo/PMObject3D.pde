@@ -61,10 +61,10 @@ class PMObject3D {
     Keystone ks;
     float perspective = 0.0;
     float [] angle3d = {15, 0, 0};
-    float zoom = 311;
+    float zoom = 200;
     float zoomDisc = 2;
-    float centerx =749;
-    float centery = 591;
+    float centerx;
+    float centery;
     
     public PMObject3D (PApplet myparent) {  
         float[][][] cubo = 
@@ -159,8 +159,8 @@ class PMObject3D {
             }
         };
 
-        //centerx = width / 2;
-        //centery = height / 2;
+        centerx = width / 2;
+        centery = height / 2;
         
         ks = new Keystone(myparent);
         surfaces = new ArrayList<PMSurface>();
